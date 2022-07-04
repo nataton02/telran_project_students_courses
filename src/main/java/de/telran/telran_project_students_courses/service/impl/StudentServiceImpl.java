@@ -65,7 +65,7 @@ public class StudentServiceImpl implements StudentService {
                         .orElseThrow(() ->
                                 new ResponseStatusException(
                                         HttpStatus.NOT_FOUND,
-                                        String.format("Student with id %s does not exist", id))))
+                                        String.format("Course with id %s does not exist", id))))
                 .collect(Collectors.toList());
 
 
